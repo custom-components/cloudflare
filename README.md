@@ -14,15 +14,19 @@ cloudflare:
   records: 'bin', 'www'
   zone: 'example.com'
 ```
-**Configuration variables::**
-**email: 
-(Required):**: 
-**key: 
-(Required):**: 
-**records: 
-(Optional):**: 
-**zone: 
-(Required):**: 
+**Configuration variables::**  
+**email**: null  
+**#**:   
+**Required:**:   
+**key**: null  
+**#**:   
+**Required:**:   
+**records**: null  
+**#**:   
+**Optional:**:   
+**zone**: null  
+**#**:   
+**Required:**:   
 You will find your global API `key` in your cloudflare account settings.
 The component will run every hour, but can also be manually started by using the service `cloudflare.update_records` under services.  
 This component uses the API from [ipify.org](https://www.ipify.org/) to set the public IP address.
