@@ -14,7 +14,7 @@ cloudflare:
   records: 'bin', 'www'
   zone: 'example.com'
 ```
-**Configuration variables::**  
+**Configuration variables:**  
   
 key | description  
 :--- | :---  
