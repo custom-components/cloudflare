@@ -15,6 +15,8 @@ cloudflare:
   zone: 'example.com'
 ```
 **Configuration variables::**  
+key | description
+:---|:---
 **email (Required)** | The email address for your Cloudflare account.  
 **key (Required)** | The global API key for your Cloudflare account.  
 **zone (Required)** | The DNS zone you want to update.  
