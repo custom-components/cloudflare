@@ -19,10 +19,6 @@ cloudflare:
 **key (Required)**: null  
 **zone (Required)**: null  
 **records (Optional)**: null  
-**email (Required)**: null  
-**key (Required)**: null  
-**zone (Required)**: null  
-**records (Optional)**: null  
 You will find your global API `key` in your cloudflare account settings.
 The component will run every hour, but can also be manually started by using the service `cloudflare.update_records` under services.  
 This component uses the API from [ipify.org](https://www.ipify.org/) to set the public IP address.
