@@ -21,6 +21,7 @@ key | description
 **key (Required)** | The global API key for your Cloudflare account.  
 **zone (Required)** | The DNS zone you want to update.  
 **records (Optional)** | A list of records you want to update, if no list are defined if will update every A record in that zone.  
+|  
 You will find your global API `key` in your cloudflare account settings.
 The component will run every hour, but can also be manually started by using the service `cloudflare.update_records` under services.  
 This component uses the API from [ipify.org](https://www.ipify.org/) to set the public IP address.
