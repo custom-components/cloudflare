@@ -11,7 +11,7 @@ To get started put `/custom_components/cloudflare.py` here:
 cloudflare:
   email: 'user@example.com'
   key: 'c2547eb745079dac9320b638f5e225cf483cc5cfdda41'
-  records: \n - bin\n - www
+  records: 'bin', 'www'
   zone: 'example.com'
 ```
 You will find your global API `key` in your cloudflare account settings.
