@@ -9,18 +9,11 @@ To get started put `/custom_components/cloudflare.py` here:
 **Example configuration.yaml:**
 ```yaml
 cloudflare:
-  -: 
-  bin: null
-  -: 
-  www: null
   email: 'user@example.com'
   key: 'c2547eb745079dac9320b638f5e225cf483cc5cfdda41'
-  records: 
+  records: \n - bin\n - www
   zone: 'example.com'
 ```
-#### Sample overview
-![Sample overview](overview.png)
-  
 You will find your global API `key` in your cloudflare account settings.
 The component will run every hour, but can also be manually started by using the service `cloudflare.update_records` under services.  
 This component uses the API from [ipify.org](https://www.ipify.org/) to set the public IP address.
