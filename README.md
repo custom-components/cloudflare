@@ -1,6 +1,6 @@
 # custom_component to update Cloudflare records
 ![Version](https://img.shields.io/badge/version-2.0.1-green.svg?style=for-the-badge) ![mantained](https://img.shields.io/maintenance/yes/2018.svg?style=for-the-badge)   
-A component which allows you to update the IP adderesses of your Cloudflare DNS records.
+A platform which allows you to update the IP adderesses of your Cloudflare DNS records.
   
 To get started put `/custom_components/cloudflare.py` here:
 `<config directory>/custom_components/cloudflare.py`  
@@ -24,4 +24,4 @@ key | description
   
 You will find your global API `key` in your cloudflare account settings.
 The component will run every hour, but can also be manually started by using the service `cloudflare.update_records` under services.  
-This component uses the API from [ipify.org](https://www.ipify.org/) to set the public IP address.
+This platform uses the API from [ipify.org](https://www.ipify.org/) to set the public IP address.
