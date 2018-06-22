@@ -8,6 +8,10 @@ To get started put `/custom_components/cloudflare.py` here:
 **Example configuration.yaml:**
 ```yaml
 cloudflare:
+  email: 'user@example.com'
+  key: 'c2547eb745079dac9320b638f5e225cf483cc5cfdda41'
+  zone: 'example.com'
+  records: 'bin', 'www'
 ```
 **Configuration variables:**  
   
