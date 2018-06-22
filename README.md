@@ -2,8 +2,8 @@
 ![Version](https://img.shields.io/badge/version-2.0.1-green.svg?style=for-the-badge) ![mantained](https://img.shields.io/maintenance/yes/2018.svg?style=for-the-badge)   
 A platform which allows you to update the IP adderesses of your Cloudflare DNS records.
   
-To get started put `/custom_components/cloudflare.py` here:
-`<config directory>/custom_components/cloudflare.py`  
+To get started put `/custom_components/cloudflare.py`  
+here: `<config directory>/custom_components/cloudflare.py`  
   
 **Example configuration.yaml:**
 ```yaml
@@ -11,7 +11,9 @@ cloudflare:
   email: 'user@example.com'
   key: 'c2547eb745079dac9320b638f5e225cf483cc5cfdda41'
   zone: 'example.com'
-  records: 'bin', 'www'
+  records:
+    - 'bin'
+    - 'www'
 ```
 **Configuration variables:**  
   
