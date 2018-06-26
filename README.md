@@ -27,4 +27,5 @@ key | description
 You will find your global API `key` in your cloudflare account settings.
 The component will run every hour, but can also be manually started by using the service `cloudflare.update_records` under services.  
 This platform uses the API from [ipify.org](https://www.ipify.org/) to set the public IP address.  
+***
 Due to how `custom_componentes` are importerd, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
