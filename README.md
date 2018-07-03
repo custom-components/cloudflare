@@ -25,8 +25,10 @@ key | description
 **zone (Required)** | The DNS zone you want to update.  
 **records (Optional)** | A list of records you want to update, if no list are defined if will update every A record in that zone.  
   
+[Discuss this on the home-assistant forum](null)
+  
 You will find your global API `key` in your cloudflare account settings.
 The component will run every hour, but can also be manually started by using the service `cloudflare.update_records` under services.  
 This platform uses the API from [ipify.org](https://www.ipify.org/) to set the public IP address.  
 ***
-Due to how `custom_componentes` are importerd, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
+Due to how `custom_componentes` are loaded, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
