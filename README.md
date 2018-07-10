@@ -15,8 +15,8 @@ cloudflare:
   api_key: c2547eb745079dac9320b638f5e225cf483cc5cfdda41
   zone: example.com
   records:
-    - 'bin'
-    - 'www'
+    - bin
+    - www
 ```
 
 **Configuration variables:**  
@@ -26,7 +26,7 @@ key | description
 **email (Required)** | The email address for your Cloudflare account.  
 **key (Required)** | The global API key for your Cloudflare account.  
 **zone (Required)** | The DNS zone you want to update.  
-**records (Optional)** | A list of records you want to update, if no list are defined if will update every A record in that zone.  
+**records (Required)** | A list of records you want to update.
   
 You will find your global API `key` in your cloudflare account settings.
 The component will run every hour, but can also be manually started by using the service `cloudflare.update_records` under services.  

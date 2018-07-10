@@ -24,7 +24,7 @@ CONFIG_SCHEMA = vol.Schema({
         vol.Required(CONF_EMAIL): cv.string,
         vol.Required(CONF_API_KEY): cv.string,
         vol.Required(CONF_ZONE): cv.string,
-        vol.Optional(CONF_RECORDS, default='None'):
+        vol.Required(CONF_RECORDS, default='None'):
             vol.All(cv.ensure_list, [cv.string]),
     })
 }, extra=vol.ALLOW_EXTRA)
@@ -73,4 +73,3 @@ def _update_cloudflare(cfupdate, email, key, zone, records):
 
     if result is not True:
         _LOGGER.warning(result)
-    return True
